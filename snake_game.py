@@ -17,6 +17,7 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
 
 class SnakeGame:
     def __init__(self):
@@ -83,6 +84,9 @@ class SnakeGame:
 
     def draw(self):
         self.screen.fill(BLACK)
+        
+        # Draw border
+        pygame.draw.rect(self.screen, BLUE, (0, 0, WINDOW_WIDTH, WINDOW_HEIGHT), 5)
 
         # Draw snake
         for segment in self.snake:
