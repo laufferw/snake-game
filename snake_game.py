@@ -17,7 +17,7 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
+BLUE = (0, 0, 252)
 
 class SnakeGame:
     def __init__(self):
@@ -117,7 +117,7 @@ class SnakeGame:
             running = self.handle_input()
             self.update()
             self.draw()
-            self.clock.tick(10)
+            self.clock.tick(8)
 
 if __name__ == '__main__':
     game = SnakeGame()
